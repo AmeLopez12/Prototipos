@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Redirigir según el rol (convertido a minúsculas para coincidir)
             const rol = usuarioValido.rol.toLowerCase();
             const redirigirUrl = {
-                administrador: "../Admin/vistaAdministrador.html",
-                coach: "../Coach/vistaCoach.html",
-                participante: "../Participante/vistaParticipante.html"
+                administrador: "Admin/vistaAdministrador.html",
+                coach: "Coach/vistaCoach.html",
+                participante: "Participante/vistaParticipante.html"
             };
 
             // Redirigir a la página correspondiente o a Usuario.html
-            window.location.href = redirigirUrl[rol] || "../Usuario.html";
+            window.location.href = redirigirUrl[rol] || "index.html";
         } else {
             alert("Usuario o contraseña incorrectos.");
         }
